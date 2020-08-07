@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Hello, world!</title>
+    <title>Info School</title>
 </head>
 
 <body>
@@ -20,6 +20,7 @@
             <div class="row">
                 <nav class="col navbar navbar-expand-lg navbar-dark">
                     <a class="navbar-brand" href="index.html">Info School</a>
+                    <img src="images/logo.png" width="40" height="30" alt="logo du site">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -37,27 +38,37 @@
             </div>
         </div>
     </div>
+
+    <!-- SECTION -->
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="jumbotron">
-                    <h1>Bienvenue sur Info School !</h1>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum odio molestiae odit excepturi
-                        minus, ullam nesciunt nulla architecto quaerat illo cupiditate nihil, saepe iusto ratione quae
-                        magni. Fuga, odio quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-                        temporibus accusamus quidem animi recusandae laboriosam quaerat adipisci. Quam minima veniam
-                        itaque accusamus. Sapiente optio repellendus eum atque totam, iusto maiores. Lorem ipsum dolor
-                        sit amet, consectetur adipisicing elit. Incidunt odit modi vitae ipsa quidem itaque molestiae
-                        recusandae temporibus ad pariatur autem minima consequatur quia, dignissimos soluta debitis!
-                        Distinctio, molestiae fugit?</p>
+                <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/carousel/apprenant.jpg" class="d-block w-100" alt="Image du carousel 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/carousel/apprenant2.jpg" class="d-block w-100" alt="Image du carousel 2">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Précédent</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Suivant</span>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-lg-4">
-                <div class="card">
+                <div class="card my-3 shadow">
                     <div class="card-body">
-                        <h5 class="card-title">Nouveau titre</h5>
+                        <img class="card-img-top" src="images/home/certificate.png" alt="image de certificat">
+                        <h5 class="card-title">Devenez diplomé</h5>
                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
                             quidem iste facilis iure doloribus quas repudiandae, corrupti deleniti nostrum odit earum
                             voluptatibus vitae molestiae, at aspernatur odio enim assumenda necessitatibus.</p>
@@ -65,9 +76,10 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="card">
+                <div class="card my-3 shadow">
                     <div class="card-body">
-                        <h5 class="card-title">Titre de la carte</h5>
+                        <img class="card-img-top" src="images/home/instruction.png" alt="image de instruction">
+                        <h5 class="card-title">Formateurs de qualité</h5>
                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
                             quidem iste facilis iure doloribus quas repudiandae, corrupti deleniti nostrum odit earum
                             voluptatibus vitae molestiae, at aspernatur odio enim assumenda necessitatibus.</p>
@@ -75,9 +87,10 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="card">
+                <div class="card my-3 shadow">
                     <div class="card-body">
-                        <h5 class="card-title">Titre de la carte</h5>
+                        <img class="card-img-top" src="images/home/job.png" alt="image job">
+                        <h5 class="card-title">Un travail garenti</h5>
                         <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur
                             quidem iste facilis iure doloribus quas repudiandae, corrupti deleniti nostrum odit earum
                             voluptatibus vitae molestiae, at aspernatur odio enim assumenda necessitatibus.</p>
@@ -85,12 +98,23 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <p>FOOTER</p>
+    </div>  
+    <!-- FOOTER -->
+    <div class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"><a href="#">A propos</a></li>
+                        <li class="list-inline-item">&middot;</li>
+                        <li class="list-inline-item"><a href="#">Vie Privée</a></li>
+                        <li class="list-inline-item">&middot;</li>
+                        <li class="list-inline-item"><a href="#">Conditions d'utilisations</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>   
+    </div>  
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->     
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
