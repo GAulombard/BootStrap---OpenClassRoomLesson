@@ -45,13 +45,16 @@
                     <h1>Cours</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, doloribus magnam nihil quisquam
                         minima perferendis assumenda itaque commodi illum neque aut quia incidunt numquam culpa
-                        consequuntur cumque nesciunt dolorum! Nostrum! Lorem ipsum dolor sit amet, consectetur
-                        adipisicing elit. Adipisci et, expedita fugit, veniam qui nostrum sapiente optio magni, quam
-                        nemo tenetur amet quae sit ipsa nihil magnam. Temporibus, deserunt praesentium?</p>
+                        consequuntur cumque nesciunt dolorum! Nostrum!</p>
+                        <div class="row mb-3 p-4">
+                            <div class="col">
+                               <input class="form-control" id="searchInput" type="text" placeholder="Search..">
+                            </div>
+                         </div>
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="lessonList">
             <div class="col-12 col-lg-4">
                 <div class="card my-3 shadow h-100">
                     <div class="card-body">
@@ -122,7 +125,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
+        <script>
+            $(document).ready(function(){
+               $("#searchInput").on("keyup", function() {
+                  var value = $(this).val().toLowerCase();
+                  $("#lessonList .col-12").filter(function() {
+                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                  });
+               });
+            });
+         </script>
       
 </body>
 
